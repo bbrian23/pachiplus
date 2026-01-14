@@ -18,10 +18,10 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="#how-it-works" className="text-foreground hover:text-primary transition text-sm lg:text-base">
+          <Link href="/#how-it-works" className="text-foreground hover:text-primary transition text-sm lg:text-base">
             How It Works
           </Link>
-          <Link href="#impact" className="text-foreground hover:text-primary transition text-sm lg:text-base">
+          <Link href="/#impact" className="text-foreground hover:text-primary transition text-sm lg:text-base">
             Impact
           </Link>
           <Link href="/contact" className="text-foreground hover:text-primary transition text-sm lg:text-base">
@@ -47,14 +47,14 @@ export default function Header() {
           <div className="absolute top-16 left-0 right-0 bg-background border-b border-border md:hidden">
             <nav className="flex flex-col gap-4 p-4">
               <Link
-                href="#how-it-works"
+                href="/#how-it-works"
                 className="text-foreground hover:text-primary transition"
                 onClick={() => setIsOpen(false)}
               >
                 How It Works
               </Link>
               <Link
-                href="#impact"
+                href="/#impact"
                 className="text-foreground hover:text-primary transition"
                 onClick={() => setIsOpen(false)}
               >

@@ -24,7 +24,7 @@ export default function Footer() {
                 Home
               </Link>
               <Link
-                href="#how-it-works"
+                href="/#how-it-works"
                 className="text-xs sm:text-sm text-primary-foreground/80 hover:text-primary-foreground transition block"
               >
                 How It Works

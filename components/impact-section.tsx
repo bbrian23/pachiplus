@@ -67,7 +67,7 @@ export default function ImpactSection() {
             Aligned with UN Sustainable Development Goals
           </h3>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {sdgs.map((sdg, index) => {
               const sdgImages: Record<number, string> = {
                 2: "/sdg2.jpg",
@@ -76,18 +76,21 @@ export default function ImpactSection() {
                 13: "/sdg13.jpg",
               }
               return (
-                <div
-                  key={index}
-                  className="bg-muted rounded-lg overflow-hidden h-40 sm:h-48 flex flex-col items-center justify-center p-3 sm:p-4 relative"
-                >
-                  <img
-                    src={sdgImages[sdg.number]}
-                    alt={`SDG ${sdg.number}: ${sdg.title}`}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <div className="relative z-10 text-center bg-background/80 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-                    <div className="text-xl sm:text-2xl font-bold text-primary mb-1">SDG {sdg.number}</div>
-                    <p className="text-xs sm:text-sm font-medium text-foreground/90">{sdg.title}</p>
+                <div key={index} className="flex flex-col">
+                  <div className="bg-muted rounded-lg overflow-hidden h-40 sm:h-48 lg:h-56 mb-3 sm:mb-4">
+                    <img
+                      src={sdgImages[sdg.number]}
+                      alt={`SDG ${sdg.number}: ${sdg.title}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg sm:text-xl lg:text-2xl font-bold text-primary mb-1 sm:mb-2">
+                      SDG {sdg.number}
+                    </div>
+                    <p className="text-xs sm:text-sm lg:text-base font-semibold text-foreground/90 leading-tight">
+                      {sdg.title}
+                    </p>
                   </div>
                 </div>
               )

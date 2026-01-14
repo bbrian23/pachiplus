@@ -1,4 +1,5 @@
 import Header from "@/components/header"
+import Footer from "@/components/footer"
 import HeroSection from "@/components/hero-section"
 import WhatWeDoSection from "@/components/what-we-do-section"
 import CultureSection from "@/components/culture-section"
@@ -22,6 +23,7 @@ export default function Home() {
         <ImpactSection />
         <TrustSection />
       </main>
+      <Footer />
     </>
   )
 }
