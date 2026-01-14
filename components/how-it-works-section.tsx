@@ -13,18 +13,16 @@ export default function HowItWorksSection() {
       title: "Safe Storage & Sanitisation",
       description: "Material is stored in secure, sealed containers following strict hygiene protocols.",
       icon: "🔒",
-      imagePlaceholder: "Replace with photo of sealed urine storage containers",
     },
     {
       number: 3,
       title: "Nutrient Enhancement",
       description: "Advanced processing stabilises and enriches the nutrient composition.",
       icon: "⚗️",
-      imagePlaceholder: "Replace with photo of fertiliser mixing or storage tanks",
     },
     {
       number: 4,
-      title: "Packaging as PachiPlus",
+      title: "Packaging as EcoPlus",
       description: "Final product is packaged in convenient, labelled containers ready for distribution.",
       icon: "📦",
     },
@@ -37,9 +35,8 @@ export default function HowItWorksSection() {
     {
       number: 6,
       title: "Application on Farms",
-      description: "Farmers apply PachiPlus to their crops for improved yields and soil health.",
+      description: "Farmers apply EcoPlus to their crops for improved yields and soil health.",
       icon: "🌾",
-      imagePlaceholder: "Replace with photo of farmer applying liquid fertiliser to crops",
     },
   ]
 
@@ -48,7 +45,7 @@ export default function HowItWorksSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-3 sm:mb-4">
-            How PachiNutrient Hub Works
+            How EcoNutrientHub Works
           </h2>
           <p className="text-base sm:text-lg text-foreground/70 max-w-2xl mx-auto">
             A complete cycle from collection to farm application
@@ -73,15 +70,6 @@ export default function HowItWorksSection() {
                   </div>
                 </CardContent>
               </Card>
-
-              {step.imagePlaceholder && (
-                <div className="mt-3 sm:mt-4 bg-muted rounded-lg overflow-hidden h-40 sm:h-48 flex items-center justify-center">
-                  <div className="text-center px-4">
-                    <div className="text-2xl sm:text-3xl mb-2">{step.icon}</div>
-                    <p className="text-xs text-foreground/60 font-medium">{step.imagePlaceholder}</p>
-                  </div>
-                </div>
-              )}
             </div>
           ))}
         </div>

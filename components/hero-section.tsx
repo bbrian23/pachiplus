@@ -1,5 +1,35 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { useState, useEffect } from "react"
+
+function HeroImageSlider() {
+  const [currentImage, setCurrentImage] = useState(0)
+  const images = ["/prototype.png", "/product.jpeg"]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length)
+    }, 5000) // Change image every 5 seconds
+    return () => clearInterval(interval)
+  }, [images.length])
+
+  return (
+    <div className="relative w-full h-full">
+      {images.map((src, index) => (
+        <img
+          key={src}
+          src={src}
+          alt={index === 0 ? "Prototype" : "Product"}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            index === currentImage ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+        />
+      ))}
+    </div>
+  )
+}
 
 export default function HeroSection() {
   return (
@@ -11,7 +41,7 @@ export default function HeroSection() {
             Turning Waste Into Affordable Fertiliser for Smallholder Farmers
           </h1>
           <p className="text-base sm:text-lg text-foreground/80 leading-relaxed text-balance">
-            PachiNutrient Hub recovers nutrients from sanitation waste to produce PachiPlus — a safe, affordable, liquid
+            EcoNutrientHub recovers nutrients from sanitation waste to produce EcoPlus — a safe, affordable, liquid
             organic fertiliser that improves soil health, food security, and water protection.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
@@ -33,15 +63,9 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Hero Image Placeholder */}
-        <div className="relative bg-muted rounded-lg overflow-hidden h-80 sm:h-96 lg:h-full lg:min-h-96 flex items-center justify-center order-1 lg:order-2">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20"></div>
-          <div className="relative z-10 text-center px-6">
-            <div className="text-5xl mb-4">🌾</div>
-            <p className="text-xs sm:text-sm text-foreground/60 font-medium">
-              Replace with photo of founder working with farmers on a farm
-            </p>
-          </div>
+        {/* Hero Image - Alternating */}
+        <div className="relative bg-muted rounded-lg overflow-hidden h-80 sm:h-96 lg:h-full lg:min-h-96 order-1 lg:order-2">
+          <HeroImageSlider />
         </div>
       </div>
     </section>

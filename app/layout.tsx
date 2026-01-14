@@ -8,9 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "PachiNutrient Hub | Sustainable Fertiliser for Farmers",
+  title: "EcoNutrientHub | Sustainable Fertiliser for Farmers",
   description:
-    "PachiNutrient Hub recovers nutrients from sanitation waste to produce PachiPlus — a safe, affordable, liquid organic fertiliser for smallholder farmers in Cameroon.",
+    "EcoNutrientHub recovers nutrients from sanitation waste to produce EcoPlus — a safe, affordable, liquid organic fertiliser for smallholder farmers in Cameroon.",
   generator: "v0.app",
   icons: {
     icon: [

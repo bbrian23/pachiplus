@@ -11,8 +11,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl lg:text-2xl font-bold text-primary flex-shrink-0">
-          PachiNutrient Hub
+        <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+          <img src="/logo.png" alt="EcoNutrientHub" className="h-6 sm:h-8 w-auto" />
+          <span className="text-base sm:text-xl lg:text-2xl font-bold text-primary">EcoNutrientHub</span>
         </Link>
 
         {/* Desktop Navigation */}

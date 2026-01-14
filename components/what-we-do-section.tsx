@@ -9,7 +9,7 @@ export default function WhatWeDoSection() {
       icon: "♻️",
     },
     {
-      title: "PachiPlus Fertiliser",
+      title: "EcoPlus Fertiliser",
       description:
         "Stabilised, liquid organic fertiliser specially formulated for the needs of smallholder farmers across Cameroon.",
       icon: "🌱",
@@ -46,14 +46,21 @@ export default function WhatWeDoSection() {
           ))}
         </div>
 
-        {/* Image Placeholder */}
-        <div className="bg-muted rounded-lg overflow-hidden h-64 sm:h-80 lg:h-96 flex items-center justify-center">
-          <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-accent/20"></div>
-          <div className="relative z-10 text-center px-6">
-            <div className="text-4xl mb-4">🚿</div>
-            <p className="text-xs sm:text-sm text-foreground/60 font-medium">
-              Replace with photo of community worker collecting urine from a public toilet using jerry cans
-            </p>
+        {/* Farmland Images */}
+        <div className="space-y-4 sm:space-y-6">
+          <div className="relative bg-muted rounded-lg overflow-hidden h-64 sm:h-80 lg:h-96">
+            <img
+              src="/farmland1.png"
+              alt="Farmland"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative bg-muted rounded-lg overflow-hidden h-64 sm:h-80 lg:h-96">
+            <img
+              src="/farmland2.png"
+              alt="Farmland"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

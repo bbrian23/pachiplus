@@ -9,7 +9,7 @@ export default function DigitalFeaturesSection() {
         <div className="space-y-2 sm:space-y-3">
           <div className="bg-muted p-2 sm:p-3 rounded text-xs sm:text-sm">
             <p className="font-mono text-foreground/70">
-              <span className="font-bold">Batch ID:</span> PKN-2024-001
+              <span className="font-bold">Batch ID:</span> EKN-2024-001
             </p>
           </div>
           <div className="bg-muted p-2 sm:p-3 rounded text-xs sm:text-sm">
@@ -31,7 +31,7 @@ export default function DigitalFeaturesSection() {
         <div className="space-y-2 sm:space-y-3">
           <div className="bg-primary/10 p-3 sm:p-4 rounded border border-primary/30 text-xs sm:text-sm">
             <p className="text-foreground leading-relaxed">
-              "Your PachiPlus fertiliser (Batch PKN-2024-001) is ready for collection at the distribution centre. Please
+              "Your EcoPlus fertiliser (Batch EKN-2024-001) is ready for collection at the distribution centre. Please
               bring your farmer registration card."
             </p>
           </div>
@@ -93,12 +93,6 @@ export default function DigitalFeaturesSection() {
           ))}
         </div>
 
-        <Alert className="bg-accent/10 border-accent/30 text-foreground text-xs sm:text-sm">
-          <AlertDescription>
-            <strong>Note:</strong> SMS integration will be fully implemented in the next development phase. Current
-            interface demonstrates planned user experience.
-          </AlertDescription>
-        </Alert>
       </div>
     </section>
   )

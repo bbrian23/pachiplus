@@ -13,7 +13,7 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-3 sm:mb-4">Get In Touch</h1>
             <p className="text-base sm:text-lg text-foreground/70 max-w-2xl mx-auto">
-              Interested in partnering with PachiNutrient Hub? Have questions about our pilot program? We'd love to hear
+              Interested in partnering with EcoNutrientHub? Have questions about our pilot program? We'd love to hear
               from you.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
-                    Interested in piloting PachiNutrient Hub in your community? Contact us to discuss feasibility and
+                    Interested in piloting EcoNutrientHub in your community? Contact us to discuss feasibility and
                     next steps.
                   </p>
                 </CardContent>

@@ -5,7 +5,7 @@ export default function ImpactSection() {
     {
       title: "Improves Soil Fertility & Crop Yields",
       description:
-        "PachiPlus provides essential nutrients that enhance soil structure and significantly increase agricultural productivity.",
+        "EcoPlus provides essential nutrients that enhance soil structure and significantly increase agricultural productivity.",
       icon: "📊",
     },
     {
@@ -68,24 +68,30 @@ export default function ImpactSection() {
           </h3>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-            {sdgs.map((sdg, index) => (
-              <div
-                key={index}
-                className="bg-muted rounded-lg overflow-hidden h-40 sm:h-48 flex flex-col items-center justify-center p-3 sm:p-4"
-              >
-                <div className="text-center">
-                  <div className="text-2xl sm:text-4xl font-bold text-primary mb-1 sm:mb-2">SDG {sdg.number}</div>
-                  <p className="text-xs sm:text-sm font-medium text-foreground/80">{sdg.title}</p>
+            {sdgs.map((sdg, index) => {
+              const sdgImages: Record<number, string> = {
+                2: "/sdg2.jpg",
+                6: "/sdg6.jpg",
+                12: "/sdg12.jpg",
+                13: "/sdg13.jpg",
+              }
+              return (
+                <div
+                  key={index}
+                  className="bg-muted rounded-lg overflow-hidden h-40 sm:h-48 flex flex-col items-center justify-center p-3 sm:p-4 relative"
+                >
+                  <img
+                    src={sdgImages[sdg.number]}
+                    alt={`SDG ${sdg.number}: ${sdg.title}`}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="relative z-10 text-center bg-background/80 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                    <div className="text-xl sm:text-2xl font-bold text-primary mb-1">SDG {sdg.number}</div>
+                    <p className="text-xs sm:text-sm font-medium text-foreground/90">{sdg.title}</p>
+                  </div>
                 </div>
-                <div className="mt-3 w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-muted-foreground/20 to-muted-foreground/10"></div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-6 sm:mt-8 bg-muted/50 p-4 sm:p-6 rounded-lg border border-border text-center">
-            <p className="text-xs sm:text-sm text-foreground/60">
-              Each placeholder represents an SDG. Replace with official SDG imagery: SDG 2, SDG 6, SDG 12, SDG 13
-            </p>
+              )
+            })}
           </div>
         </div>
       </div>

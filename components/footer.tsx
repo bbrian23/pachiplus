@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg sm:text-xl font-bold mb-2">PachiNutrient Hub</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-2">EcoNutrientHub</h3>
             <p className="text-xs sm:text-sm text-primary-foreground/80">
               Turning waste into affordable fertiliser for smallholder farmers in Cameroon.
             </p>
@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-3 sm:mb-4 text-sm sm:text-base">Get In Touch</h4>
             <p className="text-xs sm:text-sm text-primary-foreground/80 mb-3">
-              Interested in partnering, piloting, or learning more about PachiNutrient Hub?
+              Interested in partnering, piloting, or learning more about EcoNutrientHub?
             </p>
             <Link
               href="/contact"
@@ -54,8 +54,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-primary/20 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-primary-foreground/70 space-y-1">
-          <p>Prototype web application – Digital layer of PachiNutrient Hub</p>
-          <p>&copy; {new Date().getFullYear()} PachiNutrient Hub. All rights reserved.</p>
+          <p>Prototype web application – Digital layer of EcoNutrientHub</p>
+          <p>&copy; {new Date().getFullYear()} EcoNutrientHub. All rights reserved.</p>
         </div>
       </div>
     </footer>
